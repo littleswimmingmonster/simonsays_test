@@ -1,0 +1,108 @@
+:root {
+  --base-calc: calc(100vw / 1.7);
+  --base-size: calc(var(--base-calc) - var(--base-calc) * 0.35);
+  --base-bottom-size: calc(var(--base-size) * 1.2);
+  --counter-size: calc(var(--base-size) * 0.35);
+}
+
+.gameboard-base {
+  /* display: none; */
+  position: fixed;
+  width: var(--base-size);
+  height: var(--base-size);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(20, 20, 20, 1) 80%,
+    rgba(10, 10, 10, 1) 63%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-size: 100%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gameboard-base-bottom {
+  position: fixed;
+  width: var(--base-bottom-size);
+  height: var(--base-bottom-size);
+  background: black;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(23, 23, 23, 1) 60%,
+    rgba(10, 10, 10, 1) 63%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background-size: 100%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gameboard {
+  /* display: none; */
+  position: fixed;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.section {
+  background-color: transparent;
+  margin: 2%;
+  width: 44%;
+  padding: 1%;
+  height: 44%;
+  float: left;
+}
+
+.section-1 {
+  transform: translate(23%);
+}
+
+.section-2 {
+  transform: translate(-23%);
+}
+
+.section-3 {
+  transform: translate(23%, 1%);
+}
+
+.section-4 {
+  transform: translate(-23%, 1%);
+}
+
+.counter-div {
+  display: flex;
+  font-family: digital;
+  font-size: 9vw;
+  color: red;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: black;
+  border: 2px solid rgba(20, 20, 20, 1);
+  top: 50%;
+  left: 50%;
+  width: var(--counter-size);
+  height: var(--counter-size);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.counter-div::before {
+  content: "88";
+  position: fixed;
+  color: rgba(20, 20, 20, 1);
+  z-index: -1;
+}
+
+.counter-div .text {
+  text-shadow: 0 0 1px red, 0 0 1px, 0 0 10px red, 0 0 30px red, 0 0 60px red;
+}

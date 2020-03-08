@@ -1,0 +1,23 @@
+@font-face {
+  font-family: digital;
+  src: url("./fonts/digital-7.ttf");
+}
+
+* {
+}
+.App {
+  content: " ";
+  height: 100vh;
+}
+.App::before {
+  background: url("./images/bokeh-of-lights-photography-1210276.jpg") center;
+  background-size: cover;
+  content: "";
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}

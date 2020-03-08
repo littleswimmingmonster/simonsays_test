@@ -1,0 +1,44 @@
+.button-image {
+  background-color: transparent;
+}
+
+.img-div {
+  background-color: transparent;
+}
+
+.red {
+  filter: brightness(25%) sepia(100%) hue-rotate(-50deg) saturate(500%)
+    contrast(1.5);
+}
+
+.red:hover {
+  filter: brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(1300%)
+    contrast(2) blur(10px);
+}
+
+.blue {
+  filter: brightness(30%) sepia(100%) hue-rotate(-200deg) saturate(500%)
+    contrast(0.8);
+}
+.blue:hover {
+  filter: brightness(50%) sepia(100%) hue-rotate(-200deg) saturate(1500%)
+    contrast(1) blur(10px);
+}
+
+.green {
+  filter: brightness(30%) sepia(100%) hue-rotate(-260deg) saturate(500%)
+    contrast(1.5);
+}
+.green:hover {
+  filter: brightness(50%) sepia(100%) hue-rotate(-260deg) saturate(1500%)
+    contrast(1.5) blur(10px);
+}
+
+.yellow {
+  filter: brightness(50%) sepia(100%) hue-rotate(-350deg) saturate(500%)
+    contrast(1.5);
+}
+.yellow:hover {
+  filter: brightness(60%) sepia(100%) hue-rotate(-350deg) saturate(1200%)
+    contrast(1.5) blur(10px);
+}
